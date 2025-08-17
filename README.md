@@ -2,7 +2,6 @@
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)  
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)  
-[![Download .exe](https://img.shields.io/badge/Download-EXE-orange)](dist/organizador.exe)
 
 Um **organizador de arquivos para Windows**, desenvolvido em **Python** com **interface gráfica Tkinter**, que organiza automaticamente os arquivos em categorias, mantendo sua pasta limpa e organizada.  
 
@@ -25,16 +24,16 @@ Um **organizador de arquivos para Windows**, desenvolvido em **Python** com **in
 ---
 
 ## 🖼 Demonstração
+<img src="screenshots/staticshot.png" width="500">
+<img src="screenshots/demo.gif" width="500"/>
 
-![GIF demonstrando o organizador em ação](screenshots/demo.gif)  
 
-> Mostre a pasta antes e depois da organização. GIF curto é suficiente.
 
 ---
 
 ## 💻 Como usar
 
-1. Baixe o script `organizador.py` ou o executável `organizador.exe`.  
+1. Baixe o script `organizador.py`  
 2. Abra o programa:  
    - `.py` → execute com Python 3:  
      ```bash
@@ -71,11 +70,10 @@ Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
 
 ---
 
-## 📌 Portfólio
+## 📌 Projeto Para Estudos
 
-Este projeto faz parte do meu portfólio de Python e interfaces gráficas:  
-[Meu GitHub](https://github.com/seu-usuario)  
-[Meu LinkedIn](https://www.linkedin.com/in/seu-usuario)  
+Este projeto foi feito para estudos com auxílio de I.A:  
+[Meu LinkedIn](https://www.linkedin.com/in/jandersonduarteabr)  
 
 ---
 
