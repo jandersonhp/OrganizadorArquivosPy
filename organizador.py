@@ -82,7 +82,7 @@ def selecionar_pasta():
 root = tk.Tk()
 root.title("Organizador de Arquivos")
 root.configure(bg="#f0f0f0")
-root.geometry("600x500")
+root.geometry("400x400")
 
 # Label inicial
 tk.Label(root, text="Selecione a pasta que deseja organizar:",
