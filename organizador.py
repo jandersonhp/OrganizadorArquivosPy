@@ -81,30 +81,38 @@ def selecionar_pasta():
 # Criando a janela principal
 root = tk.Tk()
 root.title("Organizador de Arquivos")
-root.configure(bg="#f0f0f0")
+root.configure(bg="#1e1e1e")  
 root.geometry("400x400")
 
 # Label inicial
 tk.Label(root, text="Selecione a pasta que deseja organizar:",
-         bg="#f0f0f0", fg="#333333", font=("Arial", 12, "bold")).pack(pady=10)
+         bg="#1e1e1e", fg="#ffffff", font=("Arial", 12, "bold")).pack(pady=10)
 
 # Frame para entrada e botão de selecionar
-frame_caminho = tk.Frame(root, bg="#f0f0f0")
+frame_caminho = tk.Frame(root, bg="#1e1e1e")
 frame_caminho.pack(pady=5, padx=10, fill="x")
-entry_caminho = tk.Entry(frame_caminho, font=("Arial", 11))
-entry_caminho.pack(side="left", fill="x", expand=True, padx=(0,5))
-btn_browse = tk.Button(frame_caminho, text="Selecionar", command=selecionar_pasta,
-                       bg="#4CAF50", fg="white", font=("Arial", 10, "bold"), width=12)
-btn_browse.pack(side="left")
+
+entry_caminho = tk.Entry(frame_caminho, font=("Consolas", 11),
+                         bg="#252526", fg="#d4d4d4",
+                         insertbackground="white", relief="flat")
+entry_caminho.pack(side="left", fill="x", expand=True, padx=(5,5), ipady=4)
+
+btn_browse = tk.Button(frame_caminho, text="📂 Procurar", command=selecionar_pasta,
+                       bg="#0e639c", fg="white", font=("Segoe UI", 8, "bold"),
+                       relief="flat", padx=5, pady=5)
+btn_browse.pack(side="right")
 
 # Botão organizar
-btn_organizar = tk.Button(root, text="Organizar", command=organizar,
-                          bg="#2196F3", fg="white", font=("Arial", 12, "bold"), width=20)
-btn_organizar.pack(pady=10)
+btn_organizar = tk.Button(root, text="⚡ Organizar Arquivos", command=organizar,
+                          bg="#007acc", fg="white", font=("Segoe UI", 12, "bold"),
+                          relief="flat", padx=10, pady=5)
+btn_organizar.pack(pady=15)
 
 # Caixa de saída
-txt_saida = scrolledtext.ScrolledText(root, width=70, height=20, bg="#ffffff", fg="#000000",
-                                      font=("Courier New", 10), relief="sunken", bd=2)
+txt_saida = scrolledtext.ScrolledText(root, width=70, height=20,
+                                      bg="#252526", fg="#d4d4d4",
+                                      font=("Courier New", 10), relief="sunken", bd=2,
+                                      insertbackground="white")
 txt_saida.pack(padx=10, pady=5)
 
 root.mainloop()
