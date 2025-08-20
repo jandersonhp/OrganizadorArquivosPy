@@ -24,7 +24,7 @@ Um **organizador de arquivos para Windows**, desenvolvido em **Python** com **in
 ---
 
 ## 🖼 Demonstração
-<img src="screenshots/demo.gif" width="500"/>
+<img src="screenshots/gifdemo.gif" width="500"/><br>
 <img src="screenshots/staticshot.png" width="500">
 
 
